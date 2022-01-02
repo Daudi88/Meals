@@ -22,7 +22,7 @@ MealDetailScreen.navigationOptions = navigationData => {
   const meal = navigationData.navigation.getParam('meal');
   return {
     headerTitle: meal.title,
-    headerRight: (
+    headerRight: () => (
       <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item
           title='Favorite'
